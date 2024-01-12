@@ -7,11 +7,14 @@
   font-family: "Tektur", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 60%;
   margin: 0 auto;
   padding: 20px 0;
-  overflow-x: hidden;
 }
 
 .container-nav {
@@ -23,6 +26,7 @@
 body {
   background-color: black;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -82,7 +86,7 @@ header {
   color: white;
   opacity: 0;
   text-align: center;
-  overflow: hidden;
+
   padding: 100px 0;
 }
 
@@ -96,10 +100,21 @@ header {
   font-size: 5rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.5s ease-in-out;
+  display: inline;
+}
+
+.title:hover {
+  color: brown;
 }
 
 .sub-title {
   color: #666;
+  transition: all 0.5s ease-in-out;
+}
+
+.sub-title:hover {
+  color: white;
 }
 
 .section-2 {
@@ -147,7 +162,7 @@ header {
   /* border-color: brown; */
   border: none;
   margin: 5px;
-  padding: 5px;
+  padding: 20px;
 }
 
 input:focus {
@@ -175,9 +190,23 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+}
+
+.title-about-text {
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 767px) {
+  .title-about-text {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .container {
+    width: 85%;
+  }
+
   .icon {
     width: 25px;
   }
@@ -196,5 +225,39 @@ input:focus {
 
   h2 {
     font-size: 1rem;
+  }
+
+  /* header {
+    transform: scale(0.8);
+  } */
+}
+
+@media only screen and (max-width: 307px) {
+  .icon {
+    width: 15px;
+  }
+
+  .input-tweet,
+  .input-address {
+    /* border-color: brown; */
+    border: none;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
   }
 }
