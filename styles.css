@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tektur", sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+
+.container-nav {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* NAV */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.link {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  color: gray;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.img-x {
+  width: 25px;
+  height: auto;
+}
+
+.Home {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-bar {
+}
+
+/* HEADER */
+header {
+  color: white;
+
+  text-align: center;
+
+  padding: 100px 0;
+}
+
+.container-header-item {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.title {
+  font-size: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.sub-title {
+  color: #666;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  background-color: brown;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(170, 83, 83);
+}
+
+.btn-special {
+  background-color: brown;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-special:hover {
+  background-color: rgb(170, 83, 83);
+}
+
+.input-tweet,
+.input-address {
+  /* border-color: brown; */
+  border: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+input:focus {
+  color: blue;
+}
+
+.Copyright {
+  color: white;
+  text-align: center;
+}
+
+.icon {
+  width: 25px;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .icon {
+    width: 15px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
