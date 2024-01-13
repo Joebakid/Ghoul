@@ -195,6 +195,7 @@ input:focus {
 
 .title-about-text {
   font-size: 2.5rem;
+  line-height: 1.3;
 }
 
 /* PRELOADER */
@@ -234,9 +235,58 @@ input:focus {
 body.loaded .preloader {
   display: none;
 }
+
+/* FORM */
+
+.field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.field label {
+  display: block;
+  font-size: 2rem;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  width: 100%;
+  color: black;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 15px 30px;
+  font-size: 14px;
+  background-color: brown;
+  color: #fff;
+  border: none;
+}
+
+.btn-submit {
+  margin-top: 20px;
+}
+
 /*  */
 
 @media only screen and (max-width: 767px) {
+  .field label {
+    font-size: 1.3rem;
+  }
+
+  .field input {
+    font-size: 1.1rem;
+  }
+
   .container-nav {
     width: 90%;
   }
