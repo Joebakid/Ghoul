@@ -258,7 +258,7 @@ body.loaded .preloader {
   min-width: 250px;
   line-height: 1.5;
   font-size: 1.1rem;
-  padding: 10px 0;
+  padding: 10px 10px;
   width: 100%;
   color: black;
 }
